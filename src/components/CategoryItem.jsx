@@ -21,8 +21,18 @@ const Info = styled.div`
   align-items: center;
   justify-content: center;
 `;
-const Title = styled.h1``;
-const Button = styled.button``;
+const Title = styled.h1`
+  color: white;
+  margin-bottom: 20px;
+`;
+const Button = styled.button`
+  border: none;
+  padding: 10px;
+  border-color: white;
+  color: gray;
+  cursor: pointer;
+  font-weight: 600;
+`;
 
 const CategoryItem = ({ item }) => {
   return (
