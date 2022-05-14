@@ -1,6 +1,5 @@
 import {
   AlternateEmail,
-  ContactMail,
   ContactPhone,
   Facebook,
   Home,
