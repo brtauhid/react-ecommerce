@@ -1,7 +1,8 @@
 import Product from "./pages/Product";
+import Register from "./pages/Register";
 
 const App = () => {
-  return <Product></Product>;
+  return <Register></Register>;
 };
 
 export default App;
