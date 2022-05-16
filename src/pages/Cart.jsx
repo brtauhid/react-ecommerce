@@ -55,10 +55,24 @@ const SummaryItem = styled.div`
   margin: 30px 0;
   display: flex;
   justify-content: space-between;
+  font-size: ${(props) => props.type === "total" && "20px"};
+  font-weight: ${(props) => props.type === "total" && "700"};
 `;
 const SummaryItemText = styled.span``;
 const SummaryItemPrice = styled.span``;
-const Button = styled.button``;
+const Button = styled.button`
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: black;
+  }
+`;
 
 const Hr = styled.hr`
   background-color: #eee;
@@ -209,8 +223,8 @@ const Cart = () => {
               <SummaryItemText>Discount</SummaryItemText>
               <SummaryItemPrice>$5.9</SummaryItemPrice>
             </SummaryItem>
-            <SummaryItem>
-              <SummaryItemText type="total">Total</SummaryItemText>
+            <SummaryItem type="total">
+              <SummaryItemText>Total</SummaryItemText>
               <SummaryItemPrice>$80</SummaryItemPrice>
             </SummaryItem>
             <Button>Checkout Now</Button>
